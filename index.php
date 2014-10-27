@@ -19,11 +19,13 @@
 		<div id="header">
 			<div class="width">
 				<div id="download">
-                	<input type="text" name="email" id="email" style="width:200px;"/>
-                 	<button onclick="mandarMail()">Enviar email</button> 
-                    <br/>
-                	<!--<input type="button" onClick="mandarMail();" value="Mandar email" />-->
-					<a href="index.php?zip=true">Descargar en ZIP</a>
+					<div id="left">
+						<input type="text" name="email" id="email" />
+						<button id="submit" onclick="mandarMail()">Enviar</button> 
+					</div>
+					<div id="right">
+						<a href="index.php?zip=true">Descargar en ZIP</a>
+					</div>
 				</div>
 			</div>
 		</div>
