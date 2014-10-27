@@ -1,0 +1,278 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline : none;
+	letter-spacing : 0;
+	word-spacing : 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: normal;
+	font-size: 100%;
+	list-style: none;
+	border: 0;
+	text-decoration: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+*:focus,
+*:active {
+	outline : none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+
+abbr {
+    border-bottom: 1px dotted #828282;
+    text-decoration: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+table th,
+table td {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+table th {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+strong {font-weight: bold}
+em {font-style: italic}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body {height: 100%;}
+
+body {
+	line-height: 1.25;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	border-radius: 5px;
+	padding: 5px 10px;
+	background: white;
+	border: 1px solid #ddd;
+}
+
+textarea {
+	resize: none;
+	min-height: 200px;
+}
+
+input[type="file"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+	width: auto;
+}
+
+input.error,
+select.error,
+textarea.error {
+	background: #fcf0f0;
+	border: 1px solid #f5d0d0;
+}
+
+input.error[type="submit"],
+input.error[type="radio"],
+input.error[type="checkbox"] {
+	background: none;
+	border: none;
+}
+
+ol,ul,
+.block {
+	overflow: hidden;
+	clear: both;
+}
+
+ol li {list-style: decimal}
+ul li {list-style: none}
+p {margin-top: 15px}
+h1,h2,h3,h4,h5,h6 {margin-top: 15px}
+
+.alignright{
+	float: right;
+	margin-left: 10px;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 10px;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-right {text-align: right}
+.text-left {text-align: left}
+.text-center {text-align: center}
+
+.width {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.float-left {
+	float: left;
+	width : 48.5%;
+}
+
+.float-right {
+	float: right;
+	width : 48.5%;
+}
+
+.form-block {
+	overflow: hidden;
+	clear: both;
+}
+
+.form-block .form-group {
+	margin-top: 15px;
+	overflow: hidden;
+	clear: both;
+}
+
+.form-block .form-group .form-label {
+	display: block;
+}
+
+.form-block.form-horz .form-group .form-label {
+	text-align: right;
+	width: 170px;
+	padding-top: 5px;
+	float: left;
+}
+
+.form-block.form-horz .form-group .form-control {
+    margin-left: 180px;
+}
+
+.form-validate {display: none}
+
+.form-validate ol {
+	padding: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #ffbcbc;
+	background: #ffeeee;
+}
+
+.form-validate li {
+	list-style: square;
+	margin-left: 20px;
+	font-style: italic;
+}
+
+.form-validate.valid,
+.form-validate.error {
+	display: block;
+}
+
+.button-submit {
+	border: none;
+	background: black;
+	color: white;
+	cursor: pointer;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 10px 25px;
+}
+
+.button-submit:hover {
+	opacity: .75;
+}
+
+/* Fix Chrome mobile styles */
+input[type="submit"] {
+	-webkit-appearance: none;
+}
+
+/* Fix Chrome background yellow */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.hide {display: none}
+.show {display: block}
+
+.desktop {display: block}
+.tablet {display: none}
+.mobile {display: none}
+
+@media only screen and (min-width: 768px) and (max-width: 989px) {
+	.desktop {display: none}
+	.tablet {display: block}
+	.mobile {display: none}
+}
+
+@media only screen and (max-width: 767px) {
+	.desktop {display: none}
+	.tablet {display: none}
+	.mobile {display: block}
+	
+	.alignright,
+	.alignleft,
+	.float-left,
+	.float-right {
+		float: none;
+		width : auto;
+		margin: 0;
+	}
+	
+	.form-block.form-horz .form-group .form-label {
+		text-align: left;
+		width: auto;
+		padding-top: 0;
+		float: none;
+	}
+
+	.form-block.form-horz .form-group .form-control {
+		margin-left: 0;
+	}
+}
