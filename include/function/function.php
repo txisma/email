@@ -69,7 +69,7 @@
 
         //Muevo el archivo a una ruta
         //donde no se mezcle los zip con los demas archivos
-        @rename($archivoZip, "$rutaFinal$archivoZip");
+        rename($archivoZip, "$rutaFinal$archivoZip");
 
         //Hasta aqui el archivo zip ya esta creado
 

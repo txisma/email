@@ -22,6 +22,10 @@ $final = $final . 'images/';
 
 $cuerpo = str_replace('src="images/','src="'.$final,$_POST['html']);
 
-mail($para, $titulo, $cuerpo, $cabeceras);
-
+if (mail($para, $titulo, $cuerpo, $cabeceras)){
+	echo $result = true;
+}else{
+	echo $result = false;
+}
+return($result);
 ?>
