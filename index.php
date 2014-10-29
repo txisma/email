@@ -27,21 +27,22 @@
 						<a href="index.php?zip=true">Descargar en ZIP</a>
 					</div>
                     
-                    <!-- hay que poner estilos a esto-->
-                    <div>
-                    	<label>Nombre:</label><input type="text" class="nombre" name="nombre" style="width:200px" />
+                        <!-- hay que poner estilos a esto-->
+                        <div style="float:left">
+                            <div>
+                                <label>Nombre:</label><input type="text" class="nombre" name="nombre" style="width:200px" />
+                            </div>
+                            <div>
+                                <label>Mensaje:</label><textarea cols="30" rows="5" class="mensaje" name="mensaje" style="width:200px; height:100px !important" ></textarea>
+                            </div>
+                            <div class="msg"></div>
+                                <button onclick="mandarfeed();" id="submit">Enviar Feed</button>
+                        </div>
+                        <div id="feed">
+                        
+                        </div>
+                        <!-- hay que poner estilos a esto-->
                     </div>
-                    <div>
-                    	<label>Mensaje:</label><textarea cols="30" rows="5" class="mensaje" name="mensaje" style="width:200px" ></textarea>
-                    </div>
-                    <div class="msg"></div>
-                        <button onclick="mandarfeed();" id="submit">Enviar Feed</button>
-                    </div>
-                    
-                    <div id="feed">
-                    	
-                    </div>
-                    <!-- hay que poner estilos a esto-->
 				</div>
 			</div>
 		</div>

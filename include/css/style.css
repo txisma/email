@@ -235,3 +235,7 @@ iframe {
 	padding: 5px 15px;
 	cursor: pointer;
 }
+#feed{
+	height:200px;
+	overflow:auto;
+}
